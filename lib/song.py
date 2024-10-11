@@ -19,6 +19,7 @@ class Song:
 
         CURSOR.execute(sql)
 
+## Saves instance of a song and inserts it into the database
     def save(self):
         sql = """
             INSERT INTO songs (name, album)
