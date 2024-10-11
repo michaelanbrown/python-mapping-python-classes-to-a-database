@@ -25,3 +25,4 @@ class Song:
         """
 
         CURSOR.execute(sql, (self.name, self.album))
+        CONN.commit()
