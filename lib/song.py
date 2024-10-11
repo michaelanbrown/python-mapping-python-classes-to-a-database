@@ -28,7 +28,8 @@ class Song:
 
         CURSOR.execute(sql, (self.name, self.album))
         CONN.commit()
-
+        
+    ## Gets id after was inserted into database
         self.id = CURSOR.execute("SELECT last_insert_rowid() FROM songs").fetchone()[0]
 
 ## Creates and saves song to database
