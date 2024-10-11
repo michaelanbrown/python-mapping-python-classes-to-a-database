@@ -29,6 +29,7 @@ class Song:
 
         self.id = CURSOR.execute("SELECT last_insert_rowid() FROM songs").fetchone()[0]
 
+## Creates and saves song to database
     @classmethod
     def create(cls, name, album):
         song = Song(name, album)
