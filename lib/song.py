@@ -6,6 +6,7 @@ class Song:
         self.name = name
         self.album = album
 
+## Creates the table using SQL
     @classmethod
     def create_table(cls):
         sql = """
